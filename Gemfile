@@ -25,7 +25,7 @@ gem 'jquery-rails'
 group :test, :development do
   gem 'rspec-rails', '~> 2.13.0'
   gem 'selenium-webdriver'
-  gem 'capybara', '~> 1.1.2'
+  gem 'capybara', '~> 1.1.4'
   gem 'capybara-webkit'
   gem 'headless', '~> 1.0.1'
   gem "database_cleaner"
