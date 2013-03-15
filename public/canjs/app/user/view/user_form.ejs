@@ -1,0 +1,16 @@
+<div class="<%= mode%>_user" <%= (el) -> el.data( 'model', data ) %> >
+    <input type="text" class="b4p" id="first_name" placeholder="First Name" value="<%= data.first_name %>" />
+    <input type="text" class="b4p" id="last_name" placeholder="Last Name" value="<%= data.last_name %>" />
+    <input type="text" class="b4p" id="email" placeholder="Email" value="<%= data.email %>" />
+    <%if(mode==='edit'){%>
+        <div class="eu_delete"></div>
+        <div class="eu_save_close"></div>
+    <%}else{%>
+        <div class="add_user_btn cp fr tac">
+            <div class="plus_img fl"></div>
+            <div class="plus_txt fr">add</div>
+            <div class="cb"></div>
+        </div>
+        <div class="cr"></div>
+    <%}%>
+</div>
