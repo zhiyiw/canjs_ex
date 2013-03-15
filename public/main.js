@@ -2,7 +2,7 @@ steal(
     'lib/jquery-1.9.1.min.js'
 )
 .then(
-    'lib/jquery-ui-1.10.1.min.js'
+    'lib/jquery-ui-1.10.2.min.js'
 )
 .then(
     'lib/can.jquery-1.1.4.js',
