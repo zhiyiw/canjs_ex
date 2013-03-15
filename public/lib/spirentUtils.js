@@ -18,5 +18,5 @@ $(function() {
 	    }
 	}
 
-	window.user_path = "/canjs/app/";
+	window.user_path = "canjs/app/";
 }());
