@@ -23,11 +23,11 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-  gem 'rspec-rails', '~> 2.13.0'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
-  gem 'capybara', '~> 1.1.4'
+  gem 'capybara'
   gem 'capybara-webkit'
-  gem 'headless', '~> 1.0.1'
+  gem 'headless'
   gem "database_cleaner"
 end
 

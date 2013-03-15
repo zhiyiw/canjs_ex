@@ -26,7 +26,7 @@ describe 'Add User' do
     find('div.add_user_btn').click
     
     # wait until the saving finished
-    wait_until { page.should have_css('div.ur_name') }
+    find('div.ur_name')
     
     # confirm new list item value
     page.should have_content(first_name)
