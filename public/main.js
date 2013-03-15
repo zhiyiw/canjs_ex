@@ -10,4 +10,4 @@ steal(
     'route.js'
 )
 .then('css/global.css')
-.then('canjs/app/user');
+.then('apps/user');
