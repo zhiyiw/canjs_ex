@@ -15,7 +15,7 @@ img { border: none; margin: 0; padding: 0; }
 span { margin: 0; padding: 0; }
 
 ul { margin: 0; padding: 0; }
-li { margin: 0; padding: 0; }
+li { margin: 0; padding: 0; list-style-position: inside; }
 
 .uc { text-transform: uppercase; }
 .cp { text-transform: capitalize; }

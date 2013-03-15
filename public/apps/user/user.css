@@ -21,12 +21,17 @@ header span {
 input[type='text'] {
 	color: #444;
 	border: 1px solid #a4a4a4;
-	width: 200px;
+	width: 199px;
 	height: 41px;
 	font-size: 18px;
 	line-height: 41px;
 	margin: 3px 0;
 	padding: 0 3px;
+	float: left;
+}
+
+input:first-child {
+	margin-right: 6px;
 }
 
 input#email{
