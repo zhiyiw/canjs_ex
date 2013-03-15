@@ -7,7 +7,7 @@ steal(
 .then(
     'lib/can.jquery-1.1.4.js',
     'lib/spirentUtils.js',
-    'canjs/route.js'
+    'route.js'
 )
 .then('css/global.css')
 .then('canjs/app/user');
