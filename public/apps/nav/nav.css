@@ -1,0 +1,9 @@
+#nav {
+	width: 420px;
+	margin: 10px auto;
+}
+#nav li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 15px;
+}

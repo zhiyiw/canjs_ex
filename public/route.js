@@ -17,29 +17,27 @@
         });
     }
     // create a route
-    can.route( ':widget/:sub' );
+    can.route( ':widget' );
 
     var Routing = can.Control({
         ':widget route': function(data) {
             this.handle_route(data);
-        },
-        ':widget/:sub route': function( data ) {
-            this.handle_route(data);
+            console.info(data);
         },
         handle_route: function(data){
             var widget = data['widget'];
-            var sub = data['sub'];
+            console.ingo(widget);
 
-            var self = this;
-
-            if(widget === 'account') {
+            if(widget === 'contacts') {
+                // steal('app/contacts');
                 self.cleanElement('contents');
-                var Account = new Global.App.AccountCtrl("#contents");
-                if(sub === 'load_users') {
-                    Account.load_users(widget);
-                }
+                var Contacts = new App.ContactsCtrl("#contents");
+            } else if(widget === 'about') {
+                // steal('app/about');
+                self.cleanElement('contents');
+                var About = new App.AboutCtrl("#contents");
             }
-            app_state.attr('route', {'widget': widget, 'sub': sub});
+            app_state.attr('route', {'widget': widget});
         },
         cleanElement: function(element_id) {
             var parent = $("#"+element_id).parent();
@@ -49,4 +47,4 @@
     })
     // create routing control
     new Routing( document.body );
-})
+});
