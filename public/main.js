@@ -1,5 +1,4 @@
-steal.packages('apps/contacts', 'apps/about')
-.then(
+steal(
     'jquery'
 )
 .then(
@@ -10,6 +9,7 @@ steal.packages('apps/contacts', 'apps/about')
     'can-jquery',
     'lib/spirentUtils.js'
 )
+.packages('apps/contacts', 'apps/about')
 .then(function(){
     // restore the globe states from sessionStorage
 
